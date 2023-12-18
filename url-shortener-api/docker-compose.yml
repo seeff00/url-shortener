@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  url-shortener-api:
+    container_name: url-shortener-api
+    image: golang:1.21.5
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: bash
+    working_dir: /go/src/url-shortener-api
+    volumes:
+      - ./:/go/src/url-shortener-api
+    depends_on:
+      - mysql
+    expose:
+      - 8080
+    ports:
+      - "8080:8080"
+    networks:
+      - local_network
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    expose:
+      - 3306
+    ports:
+      - "3306:3306"
+    networks:
+      - local_network
+
+networks:
+  local_network:

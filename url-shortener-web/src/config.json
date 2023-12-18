@@ -1,0 +1,4 @@
+{
+  "URL_SHORTENER_API_HOST": "http://localhost",
+  "URL_SHORTENER_API_PORT": "8080"
+}

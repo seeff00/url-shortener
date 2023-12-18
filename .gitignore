@@ -1,0 +1,6 @@
+.idea
+
+url-shortener-api/vendor
+url-shortener-api/.env
+
+url-shortener-web/node_modules
