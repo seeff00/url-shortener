@@ -1,5 +1,5 @@
 # URL Shortener API
-It's an API service, and it's built on Go v1.21.4.
+It's an API service, and it's built on Go v1.21.5.
 
 ## Prerequisites & Setup
 
