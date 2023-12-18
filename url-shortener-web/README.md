@@ -1,4 +1,4 @@
-# URL Shortener
+# URL Shortener Web
 It's a Web application and is build on React v18.2.0.
 
 ## Prerequisites & Setup
@@ -6,8 +6,7 @@ It's a Web application and is build on React v18.2.0.
 ### Prerequisites
 
 1. NodeJs - Can be downloaded from the official [download page](https://nodejs.org/en/download)
-2. The application it's depends on 'URL Shortener API' - 
-You can clone it from this [GitHub repository](https://github.com/seeff00/url-shortener-api) 
+2. The application it's depends on 'URL Shortener API'
 
 ### Config
 The project have config file located in 'url-shortener-web/src/config.json'. The file contains some configs such as
@@ -20,12 +19,11 @@ The project have config file located in 'url-shortener-web/src/config.json'. The
 
 ### Setup
 
-1. You need to have run the 'URL Shortener API' before next steps.
-2. Open terminal window and navigate somewhere on the hard drive where you're storing your React projects
+1. Open Linux terminal and navigate to your projects directory
 ```shell
-cd /home/some_user/projects/react
-git clone https://github.com/seeff00/url-shortener-web.git
-cd url-shortener-web
+cd /projects/
+git clone https://github.com/seeff00/url-shortener.git
+cd url-shortener/url-shortener-web
 
 npm install
 npm run build
@@ -33,8 +31,8 @@ npm start
 ```
 
 ## Usage
-1. When you run the last command 'npm start' it will open your browser and will navigate you to
-a new tab on http://localhost:3000. You should see a web form as shown on image below
+1. Now you can open your browser and navigate you to http://localhost:3000. 
+You should see a web form as shown on image below
 
 ![img.png](img.png)
 
