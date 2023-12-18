@@ -18,7 +18,7 @@ mv .env.dev .env
 1. Open Linux terminal and navigate to your project's directory.
 ```shell
 # Setup
-cd /your/projects/directory/
+cd /projects/
 git clone https://github.com/seeff00/url-shortener.git
 cd url-shortener/url-shortener-api/
 
