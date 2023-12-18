@@ -58,5 +58,5 @@ Example Response of "/short" endpoint:
 
 ## Keep in mind
 
-In the root of the project there is a 'dump.sql' file. On executing 'docker-compose up -d' it will up 
+In the root of the project there is a 'dump.sql' file. On executing 'docker-compose up -d' command it will up 
 MySql docker image and container and will import everything from this dump file to DB.
